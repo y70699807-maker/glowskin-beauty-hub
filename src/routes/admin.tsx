@@ -19,7 +19,7 @@ export const Route = createFileRoute("/admin")({
       { name: "robots", content: "noindex" },
     ],
   }),
-  component: AdminDashboard;
+  component: AdminDashboard,
 });
 
 const stats = [
