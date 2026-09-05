@@ -3,6 +3,10 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import heroSerum from "@/assets/hero-serum.jpg";
 import aboutFlatlay from "@/assets/about-flatlay.jpg";
+import productCleanser from "@/assets/product-cleanser.jpg";
+import productSerum from "@/assets/product-serum.jpg";
+import productMoisturizer from "@/assets/product-moisturizer.jpg";
+import productSunscreen from "@/assets/product-sunscreen.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
