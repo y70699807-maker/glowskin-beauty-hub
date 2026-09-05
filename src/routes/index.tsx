@@ -3,6 +3,10 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import heroSerum from "@/assets/hero-serum.jpg";
 import aboutFlatlay from "@/assets/about-flatlay.jpg";
+import productCleanser from "@/assets/product-cleanser.jpg";
+import productSerum from "@/assets/product-serum.jpg";
+import productMoisturizer from "@/assets/product-moisturizer.jpg";
+import productSunscreen from "@/assets/product-sunscreen.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -23,7 +27,40 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
+const products = [
+  {
+    name: "Milk Cleanser",
+    note: "Gentle daily wash · 150ml",
+    price: "$28",
+    img: productCleanser,
+    tag: "Best seller",
+  },
+  {
+    name: "Hyaluronic Veil",
+    note: "Hydrating serum · 30ml",
+    price: "$48",
+    img: productSerum,
+    tag: "New",
+  },
+  {
+    name: "Cloud Cream",
+    note: "Barrier moisturizer · 50ml",
+    price: "$42",
+    img: productMoisturizer,
+    tag: null,
+  },
+  {
+    name: "Daylight SPF 50",
+    note: "Invisible sunscreen · 40ml",
+    price: "$34",
+    img: productSunscreen,
+    tag: null,
+  },
+];
+
 const visionPillars = [
+
+
   {
     title: "Fewer steps",
     body: "A shelf of ten bottles is a chore. We design so two products can carry a whole routine.",
