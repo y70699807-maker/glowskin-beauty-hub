@@ -58,19 +58,8 @@ const products = [
   },
 ];
 
-const visionPillarsPlaceholder = null;
+const visionPillars = [
 
-const _unusedLine = null;
-
-const _keep = "Fewer steps";
-
-const visionPillarsHeader = null;
-
-// original pillars below
-const _pillarsStart = true;
-const __ignore = _pillarsStart;
-
-const _title = "Fewer steps";
 
   {
     title: "Fewer steps",
