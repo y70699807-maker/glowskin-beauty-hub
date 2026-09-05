@@ -27,7 +27,51 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const visionPillars = [
+const products = [
+  {
+    name: "Milk Cleanser",
+    note: "Gentle daily wash · 150ml",
+    price: "$28",
+    img: productCleanser,
+    tag: "Best seller",
+  },
+  {
+    name: "Hyaluronic Veil",
+    note: "Hydrating serum · 30ml",
+    price: "$48",
+    img: productSerum,
+    tag: "New",
+  },
+  {
+    name: "Cloud Cream",
+    note: "Barrier moisturizer · 50ml",
+    price: "$42",
+    img: productMoisturizer,
+    tag: null,
+  },
+  {
+    name: "Daylight SPF 50",
+    note: "Invisible sunscreen · 40ml",
+    price: "$34",
+    img: productSunscreen,
+    tag: null,
+  },
+];
+
+const visionPillarsPlaceholder = null;
+
+const _unusedLine = null;
+
+const _keep = "Fewer steps";
+
+const visionPillarsHeader = null;
+
+// original pillars below
+const _pillarsStart = true;
+const __ignore = _pillarsStart;
+
+const _title = "Fewer steps";
+
   {
     title: "Fewer steps",
     body: "A shelf of ten bottles is a chore. We design so two products can carry a whole routine.",
