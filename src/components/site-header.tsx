@@ -4,11 +4,10 @@ import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 const links = [
-  { to: "/", label: "Home" },
-  { to: "/about", label: "About" },
-  { to: "/vision", label: "Vision" },
-  { to: "/mission", label: "Mission" },
-  { to: "/admin", label: "Dashboard" },
+  { href: "#home", label: "Home" },
+  { href: "#about", label: "About" },
+  { href: "#vision", label: "Vision" },
+  { href: "#mission", label: "Mission" },
 ] as const;
 
 export function SiteHeader() {
@@ -26,16 +25,21 @@ export function SiteHeader() {
 
         <nav className="hidden items-center gap-1 text-sm text-muted-foreground md:flex">
           {links.map((l) => (
-            <Link
-              key={l.to}
-              to={l.to}
-              activeOptions={{ exact: l.to === "/" }}
-              activeProps={{ className: "text-foreground font-medium" }}
+            <a
+              key={l.href}
+              href={l.href}
               className="rounded-full px-3.5 py-2 transition-opacity hover:opacity-70"
             >
               {l.label}
-            </Link>
+            </a>
           ))}
+          <Link
+            to="/admin"
+            activeProps={{ className: "text-foreground font-medium" }}
+            className="rounded-full px-3.5 py-2 transition-opacity hover:opacity-70"
+          >
+            Dashboard
+          </Link>
         </nav>
 
         <div className="flex items-center gap-2">
@@ -54,17 +58,22 @@ export function SiteHeader() {
       {open && (
         <nav className="border-t border-border px-5 pb-4 pt-2 text-sm md:hidden">
           {links.map((l) => (
-            <Link
-              key={l.to}
-              to={l.to}
+            <a
+              key={l.href}
+              href={l.href}
               onClick={() => setOpen(false)}
-              activeOptions={{ exact: l.to === "/" }}
-              activeProps={{ className: "text-foreground font-medium" }}
               className="block rounded-2xl px-3 py-3 text-muted-foreground hover:bg-secondary"
             >
               {l.label}
-            </Link>
+            </a>
           ))}
+          <Link
+            to="/admin"
+            onClick={() => setOpen(false)}
+            className="block rounded-2xl px-3 py-3 text-muted-foreground hover:bg-secondary"
+          >
+            Dashboard
+          </Link>
         </nav>
       )}
     </header>
