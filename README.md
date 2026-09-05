@@ -1,14 +1,20 @@
-# Welcome to your Lovable project
+# Glowskin Beauty Hub
+
+Glowskin 
+
+لبراند منتجات العنايه بالبشره
+عايزه ب landingpage 
+هذه صفحه مخصصه لمنتجات العنايه بالبشره  عايز اعمله landing page و عايز احط فيه home , about , vision , mission و احط فيه dark and light mode و عايزه response with pc and ipad and phone وعايز داش بورد للادمن و لل dark , light mode
 
 This project was built with [Lovable](https://lovable.dev).
 
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/75ae8d4a-2ed5-40f9-a903-688a6984e67b).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +26,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
