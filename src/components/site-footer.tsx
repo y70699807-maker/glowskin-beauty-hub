@@ -1,5 +1,3 @@
-import { Link } from "@tanstack/react-router";
-
 export function SiteFooter() {
   return (
     <footer className="border-t border-border">
@@ -11,17 +9,17 @@ export function SiteFooter() {
           </p>
         </div>
         <div className="flex items-center gap-3 text-sm text-muted-foreground">
-          <Link to="/" className="hover:opacity-70">
+          <a href="#home" className="hover:opacity-70">
             Home
-          </Link>
+          </a>
           <span className="size-1 rounded-full bg-primary" />
-          <Link to="/about" className="hover:opacity-70">
+          <a href="#about" className="hover:opacity-70">
             About
-          </Link>
+          </a>
           <span className="size-1 rounded-full bg-primary" />
-          <Link to="/mission" className="hover:opacity-70">
+          <a href="#mission" className="hover:opacity-70">
             Mission
-          </Link>
+          </a>
         </div>
       </div>
     </footer>
